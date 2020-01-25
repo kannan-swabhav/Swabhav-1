@@ -63,6 +63,9 @@ local.properties
 # Eclipse Core
 .project
 
+#pdf
+*.pdf
+
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
