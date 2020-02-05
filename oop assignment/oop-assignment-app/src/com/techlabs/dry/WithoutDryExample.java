@@ -1,56 +1,63 @@
 package com.techlabs.dry;
 
-import java.util.Arrays;
-
 public class WithoutDryExample {
 	
  public static void main(String[] args)
 	{
-		//String url="https://www.swabhavtechlabs.com?developer=tejashree&role=engineer";
-		//String url="https://www.swabhavtechlabs.com?role=engineer";
-		//String url="https://www.swabhavtechlabs.com?developer=tejashree";
-		String url="https://www.aurionpro.com?developer=tejashree&role=engineer";
-		//String url=null;
-		
-		String companyName, employeeName, role;
-		int i;
-		
-		if(url!=null)
-	    {
-		url = url.replace('=', '.');
-		url = url.replace('&', '.');
-	    String[] split=url.split("\\.");
-	    companyName=split[1];
-	    
-	    System.out.println(Arrays.toString(split));
-	    
-	    if(url.contains("developer")==true && url.contains("role")==true)
-	    	employeeName=split[3];
-	    else if(url.contains("developer")==true)
-	    	employeeName= split[3];
-	    else
-	    	employeeName= null;
-	    
-	    
-	    if(url.contains("role")==true && url.contains("developer")==true)
-	        role= split[5];
-	    else if(url.contains("role")==true)
-	    	role= split[3];
-	    else
-	    	role= null;
-	    
-	      
-	    System.out.println(companyName);
-	    if(employeeName!=null)
-	    System.out.println(employeeName);
-	    if(role!=null)
-	    System.out.println(role);
-	    }
-	    else
-	    {
-	    	System.out.println("Values not found");
-	    }
-	}
-
+	 //String student= "inSports";
+	 //String student="inNss";
+	 //String student="inNcc";
+	 String student="inOther";
+	 //String student="none";
+	 
+	 int totalMarks=450;
+	 
+	 if(student=="inSports")
+		 addSportsQuotaMarks(totalMarks);
+	 else if(student=="inNss")
+		 addNssQuotaMarks(totalMarks);
+	 else if(student=="inNcc")
+		 addNccQuotaMarks(totalMarks);
+	 else if(student=="inOther")
+		 addOtherGraceMarks(totalMarks);
+	 else
+		 System.out.println("Total marks of all the subjects = " + totalMarks);
+	 
+ 	}
+ public static void addSportsQuotaMarks(int totalMarks)
+ {
+	 int updatedMarks= totalMarks+5;
+	 int grace= updatedMarks-totalMarks;
+	 System.out.println("Total marks of all the subjects = " + totalMarks);
+	 System.out.println("Total marks after adding grace markss = " + updatedMarks);
+	 System.out.println("Total grace marks added = " + grace);
+ }
+ 
+ public static void addNssQuotaMarks(int totalMarks)
+ {
+	 int updatedMarks= totalMarks+10;
+	 int grace= updatedMarks-totalMarks;
+	 System.out.println("Total marks of all the subjects = " + totalMarks);
+	 System.out.println("Total marks after adding grace markss = " + updatedMarks);
+	 System.out.println("Total grace marks added = " + grace);
+ }
+ 
+ public static void addNccQuotaMarks(int totalMarks)
+ {
+	 int updatedMarks= totalMarks+10;
+	 int grace= updatedMarks-totalMarks;
+	 System.out.println("Total marks of all the subjects = " + totalMarks);
+	 System.out.println("Total marks after adding grace markss = " + updatedMarks);
+	 System.out.println("Total grace marks added = " + grace);
+ }
+ 
+ public static void addOtherGraceMarks(int totalMarks)
+ {
+	 int updatedMarks= totalMarks+8;
+	 int grace= updatedMarks-totalMarks;
+	 System.out.println("Total marks of all the subjects = " + totalMarks);
+	 System.out.println("Total marks after adding grace markss = " + updatedMarks);
+	 System.out.println("Total grace marks added = " + grace); 
+ }
+ 
 }
-
