@@ -15,23 +15,23 @@ public class OverloadingTest {
 	
 	}
 
-	public static void printInfo(String s) {
+	private static void printInfo(String s) {
 		System.out.println(s);
 	}
 
-	public static void printInfo(int i) {
+	private static void printInfo(int i) {
 		System.out.println(i);
 	}
 
-	public static void printInfo(char c) {
+	private static void printInfo(char c) {
 		System.out.println(c);
 	}
 
-	public static void printInfo(float f) {
+	private static void printInfo(float f) {
 		System.out.println(f);
 	}
 
-	public static void printInfo(boolean b) {
+	private static void printInfo(boolean b) {
 		System.out.println();
 	}
 }

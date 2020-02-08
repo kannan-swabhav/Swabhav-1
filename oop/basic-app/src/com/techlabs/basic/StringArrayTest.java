@@ -2,8 +2,8 @@ package com.techlabs.basic;
 
 public class StringArrayTest {
 	
-	public static void main(String[] args) {
-		String[] nameArray= {"tejashree","pawan","sejal","tanmay","murtaza","jay","vinit","prasad","pawan"};
+	public static void main(String[] nameArray) {
+		//String[] nameArray= {"tejashree","pawan","sejal","tanmay","murtaza","jay","vinit","prasad","pawan"};
 		int i, length=0;
 		String maxLengthName=null;
 		
