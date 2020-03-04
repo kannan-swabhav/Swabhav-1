@@ -21,36 +21,38 @@ public class CircleTest {
 
 		printInfo(circles);
 		Circle big = findBigCircle(circles);
-		System.out.println("BIggest circle is having radius = " + big);
+		System.out.println("BIggest circle is " + big);
 		Circle small = findSmallCircle(circles);
 		System.out.println("Smallest circle is " + small);
+		System.out.println("Max radius is" + findBigCircle(circles).getRadius());
+		printInfo(findSmallCircle(circles));
 
 	}
 
-	public static Circle findBigCircle(Circle[] ref) {
+	public static Circle findBigCircle(Circle[] circles) {
 
 		Circle big = null;
-		float radius = ref[0].getRadius();
-		for (int i = 0; i < ref.length; i++) {
-			if (ref[i].getRadius() > radius)
-				big = ref[i];
+		float radius = circles[0].getRadius();
+		for (int i = 0; i < 5; i++) {
+			if (circles[i].getRadius() > radius)
+				big = circles[i];
 		}
 		return big;
 	}
 
-	public static Circle findSmallCircle(Circle[] ref) {
+	public static Circle findSmallCircle(Circle[] circles) {
 
 		Circle small = null;
-		float radius = ref[0].getRadius();
-		for (int i = 0; i < ref.length; i++) {
-			if (ref[i].getRadius() < radius)
-				small = ref[i];
+		float radius = circles[0].getRadius();
+		for (int i = 0; i < 5; i++) {
+			if (circles[i].getRadius() < radius)
+				small = circles[i];
 		}
 		return small;
 	}
 
-	public static void printInfo(Circle[] ref) {
-		for (Circle c : ref) {
+	public static void printInfo(Circle[] circles) {
+		for (Circle c : circles) {
 			printInfo(c);
 		}
 	}

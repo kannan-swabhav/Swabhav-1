@@ -10,7 +10,9 @@ public class RectanglePrintTest {
 		r1.changeHeight(10);
 		r2.changeWidth(20);
 		r2.changeHeight(30);
+		System.out.println("First rectangle data :");
 		printInfo(r1);
+		System.out.println("Second rectangle data :");
 		printInfo(r2);
 		
 	}
