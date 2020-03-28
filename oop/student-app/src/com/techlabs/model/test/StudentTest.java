@@ -8,8 +8,10 @@ public class StudentTest {
 		 System.out.println(s1.getStudentCount());
 		 Student s2 = new Student(101, "xyz");
 		 System.out.println(s2.getStudentCount());
-		 Student s3 = new Student(101, "lmno", 8.0);
+		 Student s3 = new Student(101, "lmno", 8.0f);
 		 System.out.println(s3.getStudentCount());
+		 
+		 
 	}
 
 }
