@@ -34,6 +34,7 @@ public class Student {
 	public int getStudentCount() {
 		return instanceCount;
 	}
+	//headCount function missing?
 
 }
 
